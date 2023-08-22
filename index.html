@@ -13,8 +13,35 @@
 </head>
 
 <body>
-	<main>
+	<header>
 		<h1>Guía interactiva de flexbox</h1>
+		<div class="table-of-content">
+			<ul>
+				<li><a href="#h2-introduccion">Introducción a Flexbox</a></li>
+				<li><a href="#h2-flex-direction">Flex Direction</a></li>
+				<li><a href="#h2-alineación">Alineación</a></li>
+				<li>
+					<a href="#h2-align-self">Align Self</a>
+					<ul>
+						<li><a href="#h3-content-vs-items">Content .vs. items</a></li>
+					</ul>
+				</li>
+				<li><a href="#h2-tamaño-hipotetico">Tamaño hipotético</a></li>
+				<li>
+					<a href="#h2-creciendo">Creciendo y encogiéndose</a>
+					<ul>
+						<li><a href="#h3-flex-basis">Flex basis</a></li>
+						<li><a href="#h3-flex-grow">Flex grow</a></li>
+						<li><a href="#h3-flex-shrink">Flex shrink</a></li>
+					</ul>
+				</li>
+				<li><a href="#h2-gap">Gap</a></li>
+				<li><a href="#h2-auto-margin">Auto margin</a></li>
+				<li><a href="#h2-wrapping">Wrapping</a></li>
+			</ul>
+		</div>
+	</header>
+	<main>
 		<p>
 			Flexbox es una herramienta de maquetación my poderosa. Cuando realmente
 			comprendemos cómo funciona, podemos crear diseños responsivos, es decir,
@@ -146,7 +173,7 @@
 			<div class="code-line"><span class="symbol">}</span></div>
 				</code>
 			</pre>
-		<h2>Introducción a Flexbox</h2>
+		<h2 id="h2-introduccion">Introducción a Flexbox</h2>
 		<p>
 			CSS se compone de muchos algoritmos de diseño diferentes, conocidos
 			oficialmente como "layout modes". Cada modo de diseño es su propio
@@ -178,7 +205,7 @@
 			<em>flexibilidad</em>. Podemos controlar si los artículos crecen o se
 			encogen, cómo se distribuye el espacio adicional y más.
 		</p>
-		<h2>Flex Direction</h2>
+		<h2 id="h2-flex-direction">Flex Direction</h2>
 		<p>
 			Flexbox se trata de controlar la distribución de elementos en una fila o
 			columna. De forma predeterminada, los elementos se acomodarán uno al lado
@@ -219,7 +246,7 @@
 		</ol>
 		</p>
 		<img src="./assets/axis.png" alt="Representación visual de los ejes en flexbox" class="illustrative-img">
-		<h2>Alineación</h2>
+		<h2 id="h2-alineación">Alineación</h2>
 		<p>
 			Es posible cambiar como es que los hijos se distribuyen sobre el eje principal utilizando la propiedad
 			<code>justify-content</code>:
@@ -264,7 +291,7 @@
 				<li><code>flex-end</code></li>
 			</ul>
 		</div>
-		<h2>Align Self</h2>
+		<h2 id="h2-align-self">Align Self</h2>
 		<p>
 			A diferencia de <code>justify-content</code>, <code>align-items</code> y <code>align-self</code> se aplica a
 			los hijos, no al contenedor padre. Nos permite cambiar la alineación de un elemento específico a lo largo
@@ -279,7 +306,7 @@
 			automáticamente la alineación en todos los hijos a la vez.
 		</p>
 		<p>Pero ojo 👀, no existe <code>justify-self</code>, bueno, al menos no en Flexbox</p>
-		<h3>Content .vs. items</h3>
+		<h3 id="h3-content-vs-items">Content .vs. items</h3>
 		<p>
 			Hasta el momento, Flexbox parece ser my arbitrario. Porqué es <code>justify-content</code> y
 			<code>align-items</code> y no <code>justify-items</code> o <code>align-content</code>?
@@ -338,7 +365,7 @@
 		<p>No existe la propiedad<code>justify-content</code> por lo mismo que no existe <code>justify-self</code>;
 			cuando hablamos del eje principal, pensamos a los elementos como un grupo y no de manera individual</p>
 		<!-- ALIGN CONTENT -->
-		<h2>Tamaño hipotético</h2>
+		<h2 id="h2-tamaño-hipotetico">Tamaño hipotético</h2>
 		<p>Supongamos que tenemos el siguiente codigo CSS:</p>
 		<pre>
 				<code>
@@ -448,9 +475,9 @@
 		<p>
 			Esta es una parte fundamental de la filosofía de Flexbox. Los elementos son fluidos y flexibles y pueden ajustarse a las limitaciones del mundo.
 		</p>
-		<h2>Creciendo y encogiéndose</h2>
+		<h2 id="h2-creciendo">Creciendo y encogiéndose</h2>
 		<p>Entonces, hemos visto que el algoritmo Flexbox tiene cierta flexibilidad incorporada, con <em>tamaños hipotéticos</em>. Pero para ver realmente cuán fluido puede ser Flexbox, necesitamos hablar sobre 3 propiedades: <code>flex-grow</code>, <code>flex-shrink</code> y <code>flex-basis</code>.</p>
-		<h3>Flex basis</h3>
+		<h3 id="h3-flex-basis">Flex basis</h3>
 		<p>eEn una fila Flex, <code>flex-basis</code> hace lo mismo que width. En una columna Flex, <code>flex-basis</code> hace lo mismo que height.</p>
 		<p>los autores de Flexbox crearon una propiedad genérica de "tamaño" llamada <code>flex-basis</code>. Es como <code>width</code> o <code>height</code>, pero vinculado al <strong>eje primario</strong> , como todo lo demás. Nos permite establecer el tamaño hipotético de un elemento en la dirección del eje principal, independientemente de si es horizontal o vertical.</p>
 		<p>Los siguientes elementos tienen asignada la propiedad de <code>flex-basis: 50px;</code>.</p>
@@ -458,7 +485,7 @@
 			<iframe src="./result-demo/flex-basis/flex-basis.html" frameborder="0"></iframe>
 		</div>
 		<p><code>flex-basis</code> es más una sugerencia que una restricción estricta. En cierto punto, simplemente no hay suficiente espacio para que todos los elementos se asienten en su tamaño asignado, por lo que tienen que comprometerse para evitar un desbordamiento.</p>
-		<h3>Flex grow</h3>
+		<h3 id="h3-flex-grow">Flex grow</h3>
 		<p>Por defecto, los elementos en un contexto Flex se reducirán a su tamaño mínimo cómodo a lo largo del eje principal. Esto a menudo crea espacio adicional.</p>
 		<p>Podemos especificar cómo se debe consumir ese espacio con la propiedad <code>flex-grow</code>:</p>
 		<div class="iframe-container">
@@ -471,7 +498,7 @@
 			<iframe src="./result-demo/flex-grow-fractions/flex-grow-fractions.html" frameborder="0"></iframe>
 		</div>
 		<p>El primer elemento quiere 1 unidad de espacio adicional, mientras que el segundo elemento quiere 1 unidad. Eso significa que el número total de unidades es 2 ( 1 + 1 ). Cada elemento recibe una parte proporcional de ese espacio extra.</p>
-		<h3>Flex shrink</h3>
+		<h3 id="h3-flex-shrink">Flex shrink</h3>
 		<p>En la mayoría de los ejemplos que hemos visto hasta ahora, hemos tenido espacio adicional para trabajar. Pero, ¿y si nuestros elemento son demasiado grandes para su contenedor?</p>
 		<p>Intenta encoger el contenedor para ver qué sucede:</p>
 		<div class="iframe-container">
@@ -498,7 +525,7 @@
 		</ul>
 		</p>
 		<p>Esto significa que solo una de estas propiedades puede estar activa a la vez. Si hay espacio extra, <code>flex-shrink</code> no tiene efecto, ya que los artículos no necesitan encogerse. Y si los elementos son demasiado grandes para su contenedor, <code>flex-grow</code> no tiene efecto, porque no hay espacio extra para repartir.</p>
-		<h2>Gap</h3>
+		<h2 id="h2-gap">Gap</h2>
 		<p>Una de las mayores mejoras en la calidad de vida de Flexbox en los últimos años ha sido la propiedad <code>gap</code>:</p>
 		<div class="iframe-container"><iframe src="./result-demo/gap/gap.html" frameborder="0"></iframe></div>
 		<p><code>gap</code> nos permite crear un espacio entre cada elemento Flex. Esto es genial para cosas como las barras de navegación:</p>
@@ -506,7 +533,7 @@
 			<iframe src="./result-demo/gap-navbar/gap-navbar.html" frameborder="0"></iframe>
 		</div>
 		<p><code>gap</code> es una adición relativamente nueva al lenguaje Flexbox, pero se implementó en todos los navegadores modernos desde principios del 2021.</p>
-		<h2>Auto margin</h2>
+		<h2 id="h2-auto-margin">Auto margin</h2>
 		<p>Hay otro truco relacionado con el espacio que quiero compartir. Ha existido desde los primeros días de Flexbox, pero es relativamente oscuro y alucinante.</p>
 		<p>La propiedad <code>margin</code> se utiliza para agregar espacio alrededor de un elemento específico. En algunos modos de diseño, como Flow y Positioning, incluso se puede usar para centrar un elemento, con <code>margin: auto</code>.
 		</p>
@@ -515,7 +542,7 @@
 			<iframe src="./result-demo/margin-auto/margin-auto.html" frameborder="0"></iframe>
 		</div>
 		<p>Los márgenes automáticos se comerán el espacio adicional y lo aplicarán al margen del elemento. Nos da un control preciso sobre dónde distribuir el espacio extra.</p>
-		<h2>Wrapping</h2>
+		<h2 id="h2-wrapping">Wrapping</h2>
 		<p>¡Uf! Hemos cubierto muchas cosas hasta ahora. Pero hay una ultima propiedad que me gustaría cubrir.</p>
 		<p>Hasta ahora, todos nuestros artículos se han posicionado lado a lado, en una sola fila/columna. La propiedad <code>flex-wrap</code> nos permite cambiar eso.</p>
 		<div class="iframe-container">
