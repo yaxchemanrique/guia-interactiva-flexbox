@@ -1,0 +1,46 @@
+#container-size {
+	width: 100%;
+}
+
+#propety-form {
+	max-width: 500px;
+	margin-inline: auto;
+	margin-block-end: 1.5rem;
+}
+
+#flex-form {
+	padding: 1rem;
+	border: solid 1px var(--clr-light-gray-100-3);
+	border-radius: 5px;
+}
+
+label[for='container-size'] {
+	display: flex;
+	margin-block-end: 1rem;
+}
+
+#container-size-value {
+	margin-left: auto;
+}
+
+.centered-form {
+	display: grid;
+	place-content: center;
+}
+
+button {
+	background-color: var(--clr-purple);
+	color: var(--clr-light-gray-100);
+	font-weight: 800;
+	border: none;
+	padding: 0.5rem 0.7rem;
+	border-radius: 5px;
+}
+
+input {
+	background-color: transparent;
+	padding: 0.5rem 0.7rem;
+	border: none;
+	border-bottom: 1px solid var(--clr-light-gray-100);
+	color: inherit;
+}

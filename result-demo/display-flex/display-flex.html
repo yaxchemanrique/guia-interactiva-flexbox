@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="../styles/root-style.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="../styles/iframe-root-style.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="./display-flex.css" />
+		<script src="./display-flex.js" defer></script>
+	</head>
+	<body>
+		<div class="flex-container">
+			<div class="flex-item">Estos</div>
+			<div class="flex-item">son</div>
+			<div class="flex-item">elementos</div>
+			<div class="flex-item" id="describing-display">de Bloque</div>
+		</div>
+		<form>
+			<div class="property-label">
+				<label for="display-block">
+					<input
+						type="radio"
+						id="display-block"
+						value="display-block"
+						name="display-property"
+						checked
+					/>
+					<code>display: block;</code>
+				</label>
+			</div>
+			<div class="property-label">
+				<label for="display-flex">
+					<input
+						type="radio"
+						id="display-flex"
+						value="display-flex"
+						name="display-property"
+					/>
+					<code>display: flex;</code>
+				</label>
+			</div>
+		</form>
+	</body>
+</html>

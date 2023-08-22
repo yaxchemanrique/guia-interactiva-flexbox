@@ -1,0 +1,7 @@
+.flex-property-description span,
+.container-stats span,
+.flex-shrink-value,
+#container-width-value {
+	color: var(--clr-purple);
+	font-weight: 600;
+}

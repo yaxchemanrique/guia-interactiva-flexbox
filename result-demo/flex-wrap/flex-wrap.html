@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="../styles/root-style.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="../styles/iframe-root-style.css"
+		/>
+		<script src="./flex-wrap.js" defer></script>
+	</head>
+	<style>
+		.flex-container {
+			display: flex;
+			justify-content: center;
+		}
+		.flex-item {
+			flex-basis: 150px;
+		}
+	</style>
+	<body>
+		<div class="flex-container">
+			<div class="flex-item">Son</div>
+			<div class="flex-item">Elementos</div>
+			<div class="flex-item">Flex</div>
+		</div>
+		<form class="form">
+			<fieldset id="flex-wrap-fieldset">
+				<legend><code>flex-wrap:</code></legend>
+				<input
+					type="radio"
+					id="wrap-nowrap"
+					value="nowrap"
+					name="flex-wrap"
+					checked
+				/>
+				<label for="wrap-nowrap">
+					<code>nowrap</code>
+				</label>
+				<input type="radio" id="wrap-wrap" value="wrap" name="flex-wrap" />
+				<label for="wrap-wrap">
+					<code>wrap</code>
+				</label>
+			</fieldset>
+			<br />
+			<label for="container-width">
+				<code>
+					container width:
+					<span id="container-width-value">550</span>
+				</code>
+			</label>
+			<input
+				type="range"
+				id="container-width"
+				min="200"
+				max="650"
+				value="650"
+				class="grab-cursor"
+			/>
+		</form>
+	</body>
+</html>

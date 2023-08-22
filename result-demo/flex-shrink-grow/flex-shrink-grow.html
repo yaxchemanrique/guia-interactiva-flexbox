@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="../styles/root-style.css" />
+		<link rel="stylesheet" type="text/css" href="../styles/iframe-root-style.css" />
+		<link rel="stylesheet" type="text/css" href="./flex-shrink-grow.css" />
+		<script src="./flex-shrink-grow.js" defer></script>
+	</head>
+	<style>
+		.flex-container {
+			height: 200px;
+			width: 550px;
+			display: flex;
+		}
+
+		.flex-item {
+			flex-basis: 200px;
+		}
+	</style>
+	<body>
+		<div class="flex-container">
+			<div class="flex-item">
+				<div class="flex-property-description">
+					<code>flex-basis: </code>
+					<span>200 px</span>
+				</div>
+				<div class="flex-property-description">
+					<code>flex-shrink: </code>
+					<span class="flex-shrink-value">1</span>
+				</div>
+				<div class="flex-property-description">
+					<p>actual size: <span id="width-first-item">200</span></p>
+				</div>
+			</div>
+			<div class="flex-item">
+				<div class="flex-property-description">
+					<code>flex-basis: </code>
+					<span>200 px</span>
+				</div>
+				<div class="flex-property-description">
+					<code>flex-shrink: </code>
+					<span>1</span>
+				</div>
+				<div class="flex-property-description">
+					<p>actual size: <span id="width-second-item">200</span></p>
+				</div>
+			</div>
+		</div>
+		<form class="form">
+			<div class="property-label">
+				<label for="flex-shrink">
+					<code
+						>flex-shrink:
+						<span class="flex-shrink-value">1</span>
+					</code>
+				</label>
+				<input type="range" id="flex-shrink" min="1" max="10" value="1" class="grab-cursor"/>
+				</div>
+				<div class="property-label">
+					<label for="container-width">
+					<code>
+						container width:
+						<span id="container-width-value">550</span>
+					</code>
+								</label>
+								<input
+					type="range"
+					id="container-width"
+					min="300"
+					max="550"
+					value="550"
+					class="grab-cursor"
+								/>
+				</div>
+		</form>
+		<div class="container-stats">
+			<p>Space Missing: <span id="missing-space"></span></p>
+			<p>Space Missing &#247 ( shrink Item 1 + shrink Item 2) = <span id="division"></span></p>
+			<p>Reducing Width on Item 1 by: <span id="multiplication-first"></span></p>
+			<p>Reducing Width on Item 2 by: <span id="multiplication-second"></span></p>
+			<p>Final Width Item 1: <span id="final-width-item1"></span></p>
+			<p>Final Width Item 2: <span id="final-width-item2"></span></p>
+		</div>
+	</body>
+</html>

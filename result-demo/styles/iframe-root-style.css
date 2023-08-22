@@ -1,0 +1,66 @@
+body {
+	color: var(--clr-light-gray-100);
+	background-color: var(--clr-dark-gray-700);
+	padding: 1.5rem;
+}
+
+fieldset {
+	border: solid 1px var(--clr-light-gray-100-3);
+	margin-block-end: 0.5rem;
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+.flex-container {
+	border: solid 1px var(--clr-light-gray-100-3);
+	border-radius: var(--br-med);
+}
+
+.container-stats .value {
+	color: var(--clr-yellow);
+	padding-inline-start: 0.2rem;
+	font-weight: 600;
+}
+
+.container-stats p {
+	margin-block-end: 0.2rem;
+}
+
+.flex-container {
+	margin-block-end: 2rem;
+	position: relative;
+	min-height: 300px;
+}
+
+.flex-item {
+	outline: 1px solid var(--clr-light-gray-100);
+	border-radius: 3px;
+	background-color: var(--clr-light-gray-100-3);
+	padding: 1rem;
+	margin: 0.3rem;
+}
+
+.property-label {
+	margin-block-end: 0.5rem;
+}
+
+#arrow-horizontal {
+	position: absolute;
+	top: 50%;
+}
+
+#arrow-vertical {
+	display: none;
+	position: absolute;
+	left: 50%;
+}
+
+.primary-axis-label {
+	position: absolute;
+	top: 25%;
+	right: 30px;
+}
+
+div:has(label[for='show-primary-axis']) {
+	padding-block-end: 1rem;
+}

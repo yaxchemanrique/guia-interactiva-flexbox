@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;600&family=Wix+Madefor+Display:wght@400;600;800&display=swap');
+
+:root {
+	--ff-regular: 'Wix Madefor Display', sans-serif;
+	--ff-code: 'Fira Code', monospace;
+	--clr-dark-gray-700: hsla(206, 11%, 29%, 1);
+	--clr-dark-gray-600: hsla(220, 8%, 44%, 1);
+	--clr-red: hsla(354, 80%, 76%, 1);
+	--clr-yellow: hsla(43, 100%, 66%, 1);
+	--clr-green: hsla(165, 58%, 66%, 1);
+	--clr-blue: hsla(214, 78%, 77%, 1);
+	--clr-purple: hsla(257, 72%, 82%, 1);
+	--clr-purple-50: hsla(257, 72%, 77%, 0.5);
+	--clr-purple-12: hsla(257, 72%, 82%, 0.12);
+	--clr-purple-dark: hsl(257 26% 49%);
+	--clr-purple-axis: hsla(257, 58%, 67%, 1);
+	--clr-pink: hsla(327, 71%, 79%, 1);
+	--clr-light-gray-200: hsla(220, 8%, 44%, 1);
+	--clr-light-gray-150: hsla(228, 38%, 80%, 1);
+	--clr-light-gray-100: hsla(228, 38%, 97%, 1);
+	--clr-light-gray-100-3: hsla(228, 38%, 97%, 0.3);
+	/* 
+	--clr-dark-600: hsla(327, 71%, 79%, 1); 
+	--clr-dark-500: hsla(257, 72%, 82%, 1);
+	--clr-light-400: hsla(257, 72%, 82%, 0.5);
+	--clr-light-300: hsla(228, 38%, 97%, 1);
+	--clr-light-200: hsla(228, 12%, 92%, 1);
+	--clr-light-100: hsla(354, 80%, 76%, 1);
+	--clr-light-100: hsla(228, 12%, 92%, 1);
+	--clr-light-100-3: hsla(228, 12%, 92%, 0.2);
+	*/
+	--br-big: 10px;
+	--br-med: 6px;
+	/* .primary-axis-title {
+    position: absolute;
+    z-index: 15;
+    top: 39%;
+    left: 38%;
+    color: var(--clr-light-100);
+    font-weight: 700;
+    ! text-shadow: hsl(257 26% 49% / 1) 1px 0 10px;
+    transition: transform 300ms cubic-bezier(0.79, -0.1, 0.29, 1.11);
+	
+	.container-animation {
+    min-height: 350px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    max-width: 600px;
+    ! background: hsl(257deg 72% 82% / 12%);
+    overflow: hidden;
+    border-radius: var(--br-big);
+    margin-inline: auto;
+
+	.primary-axis-animation {
+    position: absolute;
+    inset: -3px -300px;
+    ! background: hsla(257, 58%, 67%, 1);
+    z-index: 10;
+
+	.flex-element-animation {
+    position: absolute;
+    width: 132px;
+    aspect-ratio: 1 / 2;
+    ! background: hsla(257deg 72% 77%, 0.5);
+    ! backdrop-filter: blur(3px);
+    border-radius: 5px;
+    top: -130px;
+    left: -80px;
+    transition: transform 300ms cubic-bezier(0.79, -0.1, 0.29, 1.11);
+}
+	
+	*/
+}
+
+*:not(:is(ul, ol)),
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--ff-regular);
+}
+
+code {
+	font-family: var(--ff-code);
+}
+
+.grab-cursor {
+	cursor: -webkit-grab;
+	cursor: grab;
+}
+
+.grab-cursor:active {
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
+}
+
+input {
+	accent-color: var(--clr-purple);
+}
+
+input[type='range'] {
+	min-width: 300px;
+}
+
+select,
+button {
+	font-family: inherit;
+}
+
+button {
+	cursor: pointer;
+}

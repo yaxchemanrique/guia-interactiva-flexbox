@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="../styles/root-style.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="../styles/iframe-root-style.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="./gap-navbar.css" />
+		<script src="./gap-navbar.js" defer></script>
+	</head>
+	<style>
+		.flex-container {
+			display: flex;
+		}
+
+		.flex-item {
+			list-style: none;
+		}
+	</style>
+	<body>
+		<ul class="flex-container">
+			<li class="flex-item">Home</li>
+			<li class="flex-item">About Us</li>
+			<li class="flex-item">Contact Us</li>
+			<li class="flex-item">Shop</li>
+		</ul>
+		<form class="form">
+			<code>justify-content:</code>
+			<input
+				type="radio"
+				id="flex-start"
+				name="justify-content"
+				value="flex-start"
+				checked
+			/>
+			<label for="flex-start"><code>flex-start</code></label>
+
+			<input type="radio" id="center" name="justify-content" value="center" />
+			<label for="center"><code>center</code></label>
+
+			<input
+				type="radio"
+				id="flex-end"
+				name="justify-content"
+				value="flex-end"
+			/>
+			<label for="flex-end"><code>flex-end</code></label>
+		</form>
+		<label for="gap"
+			><code>gap: <span id="gap-value">16</span></code></label
+		>
+		<input
+			type="range"
+			id="gap"
+			min="0"
+			max="50"
+			value="16"
+			class="grab-cursor"
+		/>
+	</body>
+</html>

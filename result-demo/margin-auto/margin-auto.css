@@ -1,0 +1,6 @@
+.flex-container {
+	align-items: center;
+	min-height: 7rem;
+	font-weight: 600;
+	border-radius: 5px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="../styles/root-style.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="../styles/iframe-root-style.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="./flex-grow-fractions.css" />
+		<script src="./flex-grow-fractions.js" defer></script>
+		<title>Document</title>
+	</head>
+	<style>
+		.flex-container {
+			display: flex;
+		}
+	</style>
+	<body>
+		<div class="flex-container">
+			<div class="flex-item">
+				<div class="fraction">
+					<span class="numerator" id="left-fraction-numerator">1</span>
+					<span class="denominator" id="left-fraction-denominator">1</span>
+				</div>
+				<div class="buttons-container" id="left-buttons-container">
+					<button class="button-op minus-button" id="left-plus-button">
+						+
+					</button>
+					<button class="button-op plus-button" id="left-minus-button">
+						-
+					</button>
+				</div>
+			</div>
+			<div class="flex-item">
+				<div class="fraction">
+					<span class="numerator" id="right-fraction-numerator">1</span>
+					<span class="denominator" id="right-fraction-denominator">1</span>
+				</div>
+				<div class="buttons-container" id="right-buttons-container">
+					<button class="button-op minus-button" id="right-plus-button">
+						+
+					</button>
+					<button class="button-op plus-button" id="right-minus-button">
+						-
+					</button>
+				</div>
+			</div>
+		</div>
+		<button class="reset-button">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+				<path
+					d="M6.54543 8.16271C6.33021 8.10593 6.15133 7.95649 6.05716 7.7548C5.963 7.55312 5.96329 7.32002 6.05795 7.11857L7.7187 3.58418C7.84246 3.3208 8.10742 3.15278 8.39843 3.15314C8.68944 3.1535 8.95398 3.32217 9.07709 3.58586L9.80971 5.1551C9.83591 5.1448 9.86295 5.13588 9.89078 5.12842C14.2381 3.96355 18.7067 6.54346 19.8715 10.8908C21.0364 15.2382 18.4565 19.7067 14.1091 20.8716C9.7618 22.0364 5.29326 19.4565 4.12839 15.1092C3.75797 13.7267 3.7663 12.3298 4.09074 11.0311C4.19112 10.6292 4.59828 10.3849 5.00015 10.4852C5.40201 10.5856 5.6464 10.9928 5.54602 11.3947C5.28172 12.4526 5.27444 13.5907 5.57728 14.7209C6.52774 18.2681 10.1738 20.3731 13.7209 19.4227C17.2681 18.4722 19.3731 14.8262 18.4226 11.279C17.4877 7.78989 13.9447 5.69607 10.4531 6.53313L11.1923 8.11643C11.3154 8.38012 11.2748 8.69122 11.0882 8.91455C10.9017 9.13789 10.6027 9.23313 10.3214 9.15889L6.54543 8.16271Z"
+					fill="#F6F7FB"
+				/>
+			</svg>
+			<span> reset</span>
+		</button>
+	</body>
+</html>

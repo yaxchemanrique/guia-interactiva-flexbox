@@ -1,0 +1,8 @@
+body {
+	color: var(--clr-light-gray-100);
+}
+
+.flex-container {
+	position: relative;
+	min-height: 246px;
+}

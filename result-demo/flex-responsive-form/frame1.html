@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="../styles/root-style.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="../styles/iframe-root-style.css"
+		/>
+		<link rel="stylesheet" href="frame1.css" />
+		<script src="./frame1.js" defer></script>
+	</head>
+	<style>
+		#flex-form {
+			display: flex;
+			align-items: flex-end;
+			flex-wrap: wrap;
+			gap: 16px;
+		}
+
+		label[for='name'],
+		label[for='email'] {
+			display: flex;
+			flex-direction: column;
+		}
+
+		label[for='name'] {
+			flex-grow: 1;
+			flex-basis: 160px;
+		}
+
+		label[for='email'] {
+			flex-grow: 3;
+			flex-basis: 200px;
+		}
+
+		button {
+			flex-grow: 1;
+			flex-basis: 80px;
+		}
+	</style>
+	<body>
+		<form id="propety-form">
+			<label for="container-size"
+				>Container Width:
+				<span id="container-size-value"></span>
+			</label>
+			<input
+				type="range"
+				id="container-size"
+				min="250"
+				max="600"
+				class="grab-cursor"
+			/>
+		</form>
+		<div class="centered-form">
+			<form id="flex-form">
+				<label for="name">
+					Name:
+					<input type="text" id="name" />
+				</label>
+				<label for="email">
+					Email:
+					<input type="email" id="email" />
+				</label>
+				<button>Send</button>
+			</form>
+		</div>
+	</body>
+</html>

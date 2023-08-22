@@ -1,0 +1,9 @@
+.flex-container {
+	align-items: center;
+	border: none;
+	background-color: var(--clr-light-gray-150);
+	color: var(--clr-dark-gray-700);
+	min-height: 5rem;
+	font-weight: 600;
+	border-radius: 5px;
+}

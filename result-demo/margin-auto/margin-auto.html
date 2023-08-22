@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="../styles/root-style.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="../styles/iframe-root-style.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="./margin-auto.css" />
+		<script src="./margin-auto.js" defer></script>
+		<title>Document</title>
+	</head>
+	<style>
+		.flex-container {
+			display: flex;
+		}
+	</style>
+	<body>
+		<div class="flex-container">
+			<div class="flex-item">Estos</div>
+			<div class="flex-item">son</div>
+			<div class="flex-item">elementos</div>
+			<div class="flex-item">Flex</div>
+		</div>
+		<form>
+			<fieldset id="nth-of-type">
+				<label for="selected-flex-element">
+					<code>nth-of-type:</code>
+				</label>
+				<select name="selected-flex-element" id="selected-flex-element">
+					<option value="nth-1">1</option>
+					<option value="nth-2">2</option>
+					<option value="nth-3">3</option>
+					<option value="nth-4">4</option>
+				</select>
+			</fieldset>
+			<fieldset id="margins">
+				<div class="property-label">
+					<legend><code>margin-left:</code></legend>
+					<input
+						type="radio"
+						id="margin-left-0"
+						value="margin-left-0"
+						name="margin-left"
+						checked
+					/>
+					<label for="margin-left-0"><code>0</code> (default) </label>
+					<input
+						type="radio"
+						id="margin-left-auto"
+						value="margin-left-auto"
+						name="margin-left"
+					/>
+					<label for="margin-left-auto"><code>auto</code> </label>
+				</div>
+
+				<div class="property-label">
+					<legend><code>margin-right:</code></legend>
+					<input
+						type="radio"
+						id="margin-right-0"
+						value="margin-right-0"
+						name="margin-right"
+						checked
+					/>
+					<label for="margin-right-0"> <code>0</code>(default) </label>
+					<input
+						type="radio"
+						id="margin-right-auto"
+						value="margin-right-auto"
+						name="margin-right"
+					/>
+					<label for="margin-right-auto"><code>auto</code> </label>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>
