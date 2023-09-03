@@ -17,7 +17,7 @@ fieldset {
 }
 
 .container-stats .value {
-	color: var(--clr-purple-50);
+	color: var(--clr-purple-90);
 	padding-inline-start: 0.2rem;
 	font-weight: 600;
 }
@@ -34,12 +34,10 @@ fieldset {
 
 .flex-item {
 	border: 2px solid var(--clr-purple-90);
-	background-color: rgba(255, 255, 255, 0.4);
+	background-color: var(--clr-white-40);
 	border-radius: var(--br-sm);
 	padding: 1rem;
 	margin: 0.3rem;
-	/* color: var(--clr-white); */
-	/* background-color: var(--clr-black); */
 }
 
 .property-label {

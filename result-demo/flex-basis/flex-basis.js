@@ -10,7 +10,8 @@ let directionSelected = 'row';
 
 let nthOfType = 1;
 let nthOfTypeSelector = document.querySelector(`.flex-item:nth-of-type(${nthOfType})`)
-nthOfTypeSelector.style.backgroundColor = 'var(--clr-pink)';
+nthOfTypeSelector.style.backgroundColor = 'var(--clr-black)';
+nthOfTypeSelector.style.color = 'var(--clr-white)';
 
 let flexBasisController = document.querySelector('#flex-basis');
 let flexBasisValue = flexBasisController.value;
@@ -36,7 +37,8 @@ const updateFlexBasis = () => {
 form.addEventListener('change', (e) => {
     const flexItems = document.querySelectorAll('.flex-item');
     flexItems.forEach(item => {
-        item.style.backgroundColor = 'var(--clr-light-gray-100-3)';
+        item.style.backgroundColor = 'var(--clr-white-40)';
+        item.style.color = 'var(--clr-black)';
     })
     if(e.target.value === 'direction-row') {
         flexContainer.style.flexDirection = "row";
@@ -70,7 +72,8 @@ form.addEventListener('change', (e) => {
             break;
     }
     nthOfTypeSelector = document.querySelector(`.flex-item:nth-of-type(${nthOfType})`);
-    nthOfTypeSelector.style.backgroundColor = 'var(--clr-pink)';
+    nthOfTypeSelector.style.backgroundColor = 'var(--clr-black)';
+    nthOfTypeSelector.style.color = 'var(--clr-white)';
     document.querySelectorAll(`.flex-item:not(:nth-of-type(${nthOfType}))`).forEach(item => {
         item.style.flexBasis = '50px';
     })

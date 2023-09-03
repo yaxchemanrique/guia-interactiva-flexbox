@@ -1,9 +1,15 @@
 .flex-container {
 	align-items: center;
 	border: none;
-	background-color: var(--clr-light-gray-150);
-	color: var(--clr-dark-gray-700);
+	background-color: var(--clr-white-40);
+	border: 2px solid var(--clr-purple-90);
+	color: var(--clr-white);
 	min-height: 5rem;
 	font-weight: 600;
-	border-radius: 5px;
+	border-radius: var(--br-med);
+}
+
+.flex-item {
+	border: none;
+	background-color: var(--clr-black);
 }

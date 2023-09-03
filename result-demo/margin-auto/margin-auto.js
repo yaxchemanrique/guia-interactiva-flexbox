@@ -5,7 +5,8 @@ const flexItems = document.querySelectorAll('.flex-item');
 
 let nthOfType = 1;
 let nthOfTypeSelector = document.querySelector(`.flex-item:nth-of-type(${nthOfType})`)
-nthOfTypeSelector.style.backgroundColor = 'var(--clr-pink)';
+nthOfTypeSelector.style.backgroundColor = 'var(--clr-black)';
+nthOfTypeSelector.style.color = 'var(--clr-white)';
 
 let marginNthType = [0, 0];
 
@@ -55,14 +56,16 @@ const updateMarginNthType = (e) => {
 
 nthTypeFieldset.addEventListener('change', (e) => {
     flexItems.forEach(item => {
-        item.style.backgroundColor = 'var(--clr-light-gray-100-3)';
+        item.style.backgroundColor = 'var(--clr-white-40)';
+        item.style.color = 'var(--clr-black)';
     });
 
     resetMargins();
 
     updateNthOfType(e);
     nthOfTypeSelector = document.querySelector(`.flex-item:nth-of-type(${nthOfType})`);
-    nthOfTypeSelector.style.backgroundColor = 'var(--clr-pink)';
+    nthOfTypeSelector.style.backgroundColor = 'var(--clr-black)';
+    nthOfTypeSelector.style.color = 'var(--clr-white)';
     
     updateMargins();
 });

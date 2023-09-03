@@ -11,7 +11,7 @@
 }
 
 .numerator {
-	border-bottom: 1px solid var(--clr-light-gray-100);
+	border-bottom: 2px solid var(--clr-black);
 }
 
 .buttons-container {
@@ -22,9 +22,9 @@
 }
 
 .button-op {
-	background-color: var(--clr-pink);
-	border: solid 1px var(--clr-light-gray-100-3);
-	color: var(--clr-light-gray-100);
+	background-color: var(--clr-purple-90);
+	border: none;
+	color: var(--clr-white);
 	width: 35px;
 	aspect-ratio: 1;
 	font-size: 1.5rem;
@@ -37,9 +37,9 @@
 }
 
 .reset-button {
-	background-color: var(--clr-red);
-	border: solid 1px var(--clr-light-gray-100-3);
-	color: var(--clr-light-gray-100);
+	background-color: var(--clr-black);
+	border: none;
+	color: var(--clr-white);
 	padding: 0.5rem 1rem;
 	border-radius: 3px;
 	font-weight: 600;

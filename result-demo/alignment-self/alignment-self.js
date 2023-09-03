@@ -11,7 +11,8 @@ let nthOfType = 1;
 let alignSelfProperty = 'stretch';
 let nthOfTypeSelector = document.querySelector(`.flex-item:nth-of-type(${nthOfType})`)
 
-nthOfTypeSelector.style.backgroundColor = 'var(--clr-pink)';
+nthOfTypeSelector.style.backgroundColor = 'var(--clr-black)';
+nthOfTypeSelector.style.color = 'var(--clr-white)';
 
 function showBlockElement(element) {
     element.style.display = 'block'
@@ -25,7 +26,8 @@ form.addEventListener('change', (e) => {
     const flexItems = document.querySelectorAll('.flex-item');
     flexItems.forEach(item => {
         item.style.alignSelf = 'stretch';
-        item.style.backgroundColor = 'var(--clr-light-gray-100-3)';
+        item.style.backgroundColor = 'var(--clr-white-40)';
+        item.style.color = 'var(--clr-black)';
     });
     if(e.target.value === 'direction-row') {
         flexContainer.style.flexDirection = 'row';
@@ -78,7 +80,8 @@ form.addEventListener('change', (e) => {
     }
     nthOfTypeSelector = document.querySelector(`.flex-item:nth-of-type(${nthOfType})`);
     nthOfTypeSelector.style.alignSelf = alignSelfProperty;
-    nthOfTypeSelector.style.backgroundColor = 'var(--clr-pink)';
+    nthOfTypeSelector.style.backgroundColor = 'var(--clr-black)';
+    nthOfTypeSelector.style.color = 'var(--clr-white)';
 })
 
 primaryAxisCheckbox.addEventListener('change', (e) => {

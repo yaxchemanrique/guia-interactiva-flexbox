@@ -3,24 +3,20 @@
 }
 
 #propety-form {
-	max-width: 500px;
+	max-width: 600px;
 	margin-inline: auto;
 	margin-block-end: 1.5rem;
 }
 
 #flex-form {
 	padding: 1rem;
-	border: solid 1px var(--clr-light-gray-100-3);
-	border-radius: 5px;
+	border: solid 2px var(--clr-purple-90);
+	border-radius: var(--br-med);
 }
 
 label[for='container-size'] {
 	display: flex;
-	margin-block-end: 1rem;
-}
-
-#container-size-value {
-	margin-left: auto;
+	justify-content: space-between;
 }
 
 .centered-form {
@@ -29,8 +25,8 @@ label[for='container-size'] {
 }
 
 button {
-	background-color: var(--clr-purple);
-	color: var(--clr-light-gray-100);
+	background-color: var(--clr-purple-90);
+	color: var(--clr-white);
 	font-weight: 800;
 	border: none;
 	padding: 0.5rem 0.7rem;
@@ -38,9 +34,10 @@ button {
 }
 
 input {
-	background-color: transparent;
+	background-color: #ffffffa5;
+	border-radius: var(--br-sm);
 	padding: 0.5rem 0.7rem;
 	border: none;
-	border-bottom: 1px solid var(--clr-light-gray-100);
+	border-bottom: 2px solid var(--clr-purple-90);
 	color: inherit;
 }

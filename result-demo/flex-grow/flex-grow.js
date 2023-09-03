@@ -17,7 +17,8 @@ let flexGrow = 0;
 let flexGrowValue = 'flex-grow-0';
 let nthOfType = 1;
 let nthOfTypeSelector = document.querySelector(`.flex-item:nth-of-type(${nthOfType})`)
-nthOfTypeSelector.style.backgroundColor = 'var(--clr-pink)';
+nthOfTypeSelector.style.backgroundColor = 'var(--clr-black)';
+nthOfTypeSelector.style.color = 'var(--clr-white)';
 
 
 function showBlockElement(element) {
@@ -51,10 +52,10 @@ const updateContainerStats = ()=> {
     }
 
     const containerFreeSpaceValue = containerWidthValue - flexItemsWidthTotalValue > 1 ? containerWidthValue - flexItemsWidthTotalValue : 0;
-    containerWidth.innerHTML = `Flex Container ${directionTextString}: <span class="value">${containerWidthValue}</span>`;
-    containerFreeSpace.innerHTML = `Free Space (Flex Container ${directionTextString} - Flex Items ${directionTextString}): <span class="value">${containerFreeSpaceValue}</span>`;
+    containerWidth.innerHTML = `Flex Container ${directionTextString}: <span class="value">${containerWidthValue} px</span>`;
+    containerFreeSpace.innerHTML = `Free Space (Flex Container ${directionTextString} - Flex Items ${directionTextString}): <span class="value">${containerFreeSpaceValue} px</span>`;
     for (let i = 0; i < flexItemsWidthValue.length; i++) {
-        flexItemsWidth[i].innerHTML = `Flex Item No.${i} ${directionTextString}: <span class="value">${flexItemsWidthValue[i]}</span>`;
+        flexItemsWidth[i].innerHTML = `Flex Item No.${i} ${directionTextString}: <span class="value">${flexItemsWidthValue[i]} px</span>`;
     }
 }
 
@@ -125,7 +126,8 @@ primaryAxisCheckbox.addEventListener('change', (e) => {
 
 settingsFieldset.addEventListener('change', (e) => {
     flexItems.forEach(item => {
-        item.style.backgroundColor = 'var(--clr-light-gray-100-3)';
+        item.style.backgroundColor = 'var(--clr-white-40)';
+        item.style.color = 'var(--clr-black)';
     });
     
     updateNthOfType(e);
@@ -133,7 +135,8 @@ settingsFieldset.addEventListener('change', (e) => {
     updateFlexDirection(e);
     
     nthOfTypeSelector = document.querySelector(`.flex-item:nth-of-type(${nthOfType})`);
-    nthOfTypeSelector.style.backgroundColor = 'var(--clr-pink)';
+    nthOfTypeSelector.style.backgroundColor = 'var(--clr-black)';
+    nthOfTypeSelector.style.color = 'var(--clr-white)';
 
     resetFlexGrow();
     updateFlexGrow();
