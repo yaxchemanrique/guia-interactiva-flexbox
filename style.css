@@ -1,13 +1,35 @@
 body {
+	margin-inline: auto;
 	font-size: 1.2rem;
 	line-height: 1.5;
-	color: var(--clr-dark-gray-700);
-	background-color: var(--clr-light-gray-100);
+	color: #000;
+	background-color: #fff;
+	font-family: 'neue-haas-grotesk-display', sans-serif;
+	font-weight: 200;
+}
+
+::selection {
+	background-color: var(--clr-green);
+}
+
+.container {
+	margin-inline-start: auto;
+	margin-inline-end: auto;
+	max-width: 43.5rem;
+}
+
+header {
+	/* background-color: hotpink; */
 }
 
 main {
-	max-width: 50rem;
-	margin-inline: auto;
+	background-color: tomato;
+}
+
+.table-of-content {
+	height: 100%;
+	background-color: turquoise;
+	position: fixed;
 }
 
 footer {
@@ -23,12 +45,31 @@ footer {
 	color: var(--clr-light-gray-100-3);
 }
 
-::selection {
-	background-color: var(--clr-green);
-}
-
 h1 {
 	margin-block-end: 1.5rem;
+}
+
+.flexbox-title {
+	font-size: 13.5rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	background-color: #e999ff;
+	background-image: radial-gradient(
+			at 31% 60%,
+			rgb(216, 53, 153) 0px,
+			transparent 50%
+		),
+		radial-gradient(at 33% 4%, hsla(255, 72%, 63%, 1) 0px, transparent 50%),
+		radial-gradient(at 86% 86%, rgb(90, 198, 234) 0px, transparent 50%),
+		radial-gradient(at 41% 74%, hsla(338, 63%, 75%, 1) 0px, transparent 50%),
+		radial-gradient(at 97% 99%, hsla(192, 94%, 62%, 1) 0px, transparent 50%),
+		radial-gradient(at 17% 6%, rgb(206, 113, 177) 0px, transparent 50%),
+		radial-gradient(at 29% 52%, rgb(151, 145, 255) 0px, transparent 50%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	background-size: 100%;
 }
 
 h2 {
@@ -71,7 +112,43 @@ li::marker {
 	content: '➜  ';
 	color: var(--clr-blue);
 }
+/*
+.table-of-content {
+	position: fixed;
+	right: 10px;
+	top: 3px;
+	padding: 3rem;
+	font-size: 0.8rem;
+	background-color: var(--clr-purple-12);
 
+	> ul {
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.3rem;
+	}
+
+	& li::marker {
+		content: '';
+	}
+
+	& li::before {
+		content: '';
+		background-image: url();
+	}
+
+	& a ~ ul {
+		padding-left: 1rem;
+		& a {
+			color: var(--clr-pink);
+		}
+	}
+
+	& a {
+		text-decoration: none;
+	}
+}
+*/
 .iframe-container {
 	display: grid;
 	place-items: center;
