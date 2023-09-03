@@ -1,9 +1,11 @@
 :root {
-	--ff-regular: 'Wix Madefor Display', sans-serif;
+	--ff-regular: 'neue-haas-grotesk-display', sans-serif;
 	--ff-code: 'Fira Code', monospace;
 	--clr-black: #000;
 	--clr-white: #fff;
 	--clr-purple: #f3eeff;
+	--clr-purple-50: hsla(257, 72%, 77%, 0.5);
+	--clr-purple-90: #b393f4;
 
 	--clr-dark-gray-700: hsla(206, 11%, 29%, 1);
 	--clr-dark-gray-600: hsla(220, 8%, 44%, 1);
@@ -11,7 +13,6 @@
 	--clr-yellow: hsla(43, 100%, 66%, 1);
 	--clr-green: hsla(165, 58%, 66%, 1);
 	--clr-blue: hsla(214, 78%, 77%, 1);
-	--clr-purple-50: hsla(257, 72%, 77%, 0.5);
 	--clr-purple-12: hsla(257, 72%, 82%, 0.12);
 	--clr-purple-dark: hsl(257 26% 49%);
 	--clr-purple-axis: hsla(257, 58%, 67%, 1);
@@ -23,6 +24,7 @@
 
 	--br-big: 12px;
 	--br-med: 6px;
+	--br-sm: 3px;
 }
 
 *:not(:is(ul, ol)),
@@ -35,6 +37,7 @@
 
 body {
 	font-family: var(--ff-regular);
+	color: var(--clr-black);
 }
 
 code {
@@ -52,7 +55,7 @@ code {
 }
 
 input {
-	accent-color: var(--clr-purple);
+	accent-color: var(--clr-purple-90);
 }
 
 input[type='range'] {
