@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="../styles/root-style.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="../styles/iframe-root-style.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="./wrap-align-items.css" />
+		<script src="./wrap-align-items.js" defer></script>
+		<title>Document</title>
+	</head>
+	<style>
+		.flex-container {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-start;
+		}
+		.flex-item {
+			flex-basis: 300px;
+		}
+		.flex-item:nth-of-type(1),
+		.flex-item:nth-of-type(4) {
+			min-height: 100px;
+		}
+	</style>
+	<body>
+		<div class="flex-container">
+			<div class="flex-item">Estos</div>
+			<div class="flex-item">son</div>
+			<div class="flex-item">elementos</div>
+			<div class="flex-item">Flex</div>
+		</div>
+		<form class="form">
+			<div class="property-label">
+				<legend>
+					<code>align-items:</code>
+				</legend>
+					<div class="radio-container">
+						<div>
+							<input checked type="radio" name="align-items" value="align-flex-start" id="align-flex-start"></input>
+							<label for="align-flex-start">flex-start</label>
+						</div>
+						<div>
+							<input type="radio" name="align-items" value="align-center" id="align-center"></input>
+							<label for="align-center">center</label>
+						</div>
+						<div>
+							<input type="radio" name="align-items" value="align-flex-end" id="align-flex-end"></input>
+							<label for="align-flex-end">flex-end</label>
+						</div>
+						<div>
+							<input type="radio" name="align-items" value="align-baseline" id="align-baseline"></input>
+							<label for="align-baseline">baseline</label>
+						</div>
+						<div>
+							<input type="radio" name="align-items" value="align-stretch" id="align-stretch"></input>
+							<label for="align-stretch">stretch</label>
+						</div>
+					</div>
+			</div>
+		</form>
+	</body>
+</html>
