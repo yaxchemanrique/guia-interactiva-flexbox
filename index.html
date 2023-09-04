@@ -29,13 +29,16 @@
 			<div class="container1">
 				<div class="mesh-title">
 					<h1>Guía interactiva de flexbox</h1>
-					<span class="flexbox-title">flexbox</span>
+					<!-- <span class="flexbox-title">flexbox</span> -->
+					<div class="flexbox-title">
+						<object data="./assets/flexbox-title.svg"></object>
+					</div>
 					<address rel="author" class="by-yaxche">by Yaxche Manrique</address>
 				</div>
 			</div>
 		</section>
 	</header>
-	
+
 	<main>
 		<div class="container">
 			<div id="table-of-content" class="table-of-content">
@@ -68,7 +71,7 @@
 					<li><a href="#h2-wrapping">Y, eso es todo!</a></li>
 				</ul>
 			</div>
-			
+
 			<p>
 				Flexbox es una herramienta de maquetación my poderosa. Cuando realmente comprendemos cómo funciona,
 				podemos
@@ -274,7 +277,10 @@
 				</li>
 			</ol>
 			</p>
-			<img src="./assets/axis.png" alt="Representación visual de los ejes en flexbox" class="illustrative-img">
+			<div class="img-container">
+				<img src="./assets/axis.png" alt="Representación visual de los ejes en flexbox"
+					class="illustrative-img">
+			</div>
 			<h2 id="h2-alineación">Alineación</h2>
 			<p>
 				Es posible cambiar como es que los hijos se distribuyen sobre el eje principal utilizando la propiedad
@@ -845,7 +851,8 @@
 				<code>align-content</code>:
 			</p>
 			<div class="iframe-container">
-				<iframe src="./result-demo/wrap-align-items-content/wrap-align-items-content.html" frameborder="0"></iframe>
+				<iframe src="./result-demo/wrap-align-items-content/wrap-align-items-content.html"
+					frameborder="0"></iframe>
 			</div>
 			<p>
 				Cabe aclarar que los elementos flexibles necesitan espacio para moverse. Si no lo tienen disponible, no
@@ -896,9 +903,11 @@
 		</div>
 	</main>
 	<footer>
-		<div class="container">
+		<div class="container1">
 			<div class="mesh-title">
-				<span class="flexbox-title">flexbox</span>
+				<div class="flexbox-title">
+					<object data="./assets/flexbox-title.svg"></object>
+				</div>
 			</div>
 			<address rel="author" class="by-yaxche">by Yaxche Manrique</address>
 			<div class="social-media">
@@ -927,7 +936,7 @@
 						</defs>
 					</svg>
 				</a>
-				<small>2023</small>
+				<!-- <small>2023</small> -->
 			</div>
 		</div>
 	</footer>

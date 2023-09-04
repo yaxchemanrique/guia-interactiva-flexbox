@@ -1,14 +1,12 @@
 const iframes = document.querySelectorAll('iframe');
 const tableOfContent = document.getElementById('table-of-content');
-const containers = document.querySelectorAll('.container');
+const mainContainer = document.querySelector('.container');
 
 const layoutMargins = function () {
     const tableOfContentWidth = tableOfContent.offsetWidth;
-    const marginSize = (window.innerWidth - (containers[0].offsetWidth + tableOfContentWidth)) / 2;
-    tableOfContent.style.left = `${marginSize + containers[0].offsetWidth}px`;
-    for (let i = 0; i < containers.length; i++) {
-        containers[i].style.marginInline = `${marginSize}px`;
-    }
+    const marginSize = (window.innerWidth - (mainContainer.offsetWidth + tableOfContentWidth)) / 2;
+    tableOfContent.style.left = `${marginSize + mainContainer.offsetWidth}px`;
+    mainContainer.style.marginInline = `${marginSize}px`;
 };
 
 window.addEventListener('resize', layoutMargins);

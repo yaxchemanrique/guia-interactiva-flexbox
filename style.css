@@ -19,7 +19,11 @@ body {
 }
 
 header {
-	background-color: var(--clr-purple);
+	background-image: linear-gradient(
+		to bottom,
+		var(--clr-purple) 85%,
+		#f3eeff00
+	);
 }
 
 nav > .container1 {
@@ -53,7 +57,7 @@ nav a:hover {
 
 address[rel='author'] {
 	position: absolute;
-	translate: 0 105px;
+	translate: 0 90px;
 	color: var(--clr-white);
 	background-color: var(--clr-black);
 	padding-inline: 6px;
@@ -79,18 +83,21 @@ address[rel='author'] {
 	}
 }
 
-.mesh-title {
+.hero-title .mesh-title {
 	position: relative;
 	display: grid;
 	place-items: center;
+	padding-block: 6rem;
+	translate: 0 -35px;
 }
 
 h1 {
 	position: absolute;
-	font-size: 2.5rem;
+	top: 37.5%;
+	font-size: clamp(1rem, 1rem + 1.1vw, 3rem);
 	text-transform: uppercase;
 	color: #ffffff;
-	padding: 1.3rem 5rem;
+	padding: 0.8rem 2em;
 	border-radius: var(--br-big);
 	background-color: hsla(0, 0%, 100%, 0.2);
 	backdrop-filter: blur(10px);
@@ -106,27 +113,14 @@ h1 {
 	border-right: 1px solid #fff;
 }
 
+.container1 {
+	width: 100%;
+	max-width: 895px;
+	margin-inline: auto;
+}
+
 .flexbox-title {
-	font-size: 13.5rem;
-	font-weight: 900;
-	text-transform: uppercase;
-	background-color: #e999ff;
-	background-image: radial-gradient(
-			at 31% 60%,
-			rgb(216, 53, 153) 0px,
-			transparent 50%
-		),
-		radial-gradient(at 33% 4%, hsla(255, 72%, 63%, 1) 0px, transparent 50%),
-		radial-gradient(at 86% 86%, rgb(90, 198, 234) 0px, transparent 50%),
-		radial-gradient(at 41% 74%, hsla(338, 63%, 75%, 1) 0px, transparent 50%),
-		radial-gradient(at 97% 99%, hsla(192, 94%, 62%, 1) 0px, transparent 50%),
-		radial-gradient(at 17% 6%, rgb(206, 113, 177) 0px, transparent 50%),
-		radial-gradient(at 29% 52%, rgb(151, 145, 255) 0px, transparent 50%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-background-clip: text;
-	-moz-text-fill-color: transparent;
-	background-size: 100%;
+	width: 100%;
 }
 
 h2 {
@@ -148,16 +142,36 @@ h3 {
 }
 
 footer {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
 
-	min-height: 10rem;
-	background-color: var(--clr-purple);
+	min-height: 32rem;
+	background-image: linear-gradient(to top, var(--clr-purple) 85%, #f3eeff00);
 	margin: 5rem 0 0 0;
 	padding-block-end: 3rem;
 	color: var(--clr-white);
+}
+
+footer .container1 {
+	/* position: relative; */
+	position: absolute;
+	top: 50%;
+	translate: 0 -50%;
+
+	& address {
+		width: fit-content;
+		left: 50%;
+		translate: -50% 0;
+	}
+
+	& .social-media {
+		position: absolute;
+		left: 50%;
+		translate: -50% 55px;
+	}
 }
 
 li::marker {
@@ -494,7 +508,8 @@ pre {
 pre,
 .graph,
 .container-animation,
-.iframe-container {
+.iframe-container,
+.img-container {
 	border-radius: var(--br-big);
 	box-shadow: 0.4px 0.3px 0.6px #a495c642, 2px 1.6px 2.9px -0.4px #a495c642,
 		3.6px 2.9px 5.2px -0.7px #a495c642, 5.8px 4.7px 8.4px -1.1px #a495c642,
