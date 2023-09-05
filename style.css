@@ -29,6 +29,11 @@ body {
 	max-width: 43.5rem;
 }
 
+img {
+	display: block;
+	width: 100%;
+}
+
 header {
 	background-image: linear-gradient(
 		to bottom,
@@ -472,11 +477,27 @@ pre {
 	gap: 2rem;
 	margin-block: 1.5rem 2.5rem;
 }
+.img-container {
+	overflow: hidden;
+}
+.gif {
+	width: 100%;
+	padding: 1.5rem;
+}
 
-.illustrative-img {
-	display: block;
-	width: 696px;
-	margin-inline: auto;
+.img-container:has(.gif) {
+	background-color: #efe8fc;
+	position: relative;
+	overflow: hidden;
+}
+
+.img-container:has(.gif)::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	bottom: 0;
+	background-color: #efe8fc;
 }
 
 .graph {
@@ -573,7 +594,8 @@ pre,
 		21.7px 17.6px 31.4px -2.1px #a495c642, 32px 25.9px 46.3px -2.5px #a495c642;
 }
 
-pre + p {
+pre + p,
+.img-container + p {
 	margin-top: 2.5rem;
 }
 
