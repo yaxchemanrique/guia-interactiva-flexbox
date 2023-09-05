@@ -4,24 +4,9 @@
 	--clr-black: hsl(0, 0%, 0%);
 	--clr-white: hsl(0, 0%, 100%);
 	--clr-white-40: hsla(0, 0%, 100%, 0.4);
-	--clr-purple: #f3eeff;
+	--clr-purple: hsl(258, 100%, 97%);
 	--clr-purple-50: hsla(257, 72%, 77%, 0.5);
 	--clr-purple-90: hsl(260, 82%, 77%);
-
-	--clr-dark-gray-700: hsla(206, 11%, 29%, 1);
-	--clr-dark-gray-600: hsla(220, 8%, 44%, 1);
-	--clr-red: hsla(354, 80%, 76%, 1);
-	--clr-yellow: hsla(43, 100%, 66%, 1);
-	--clr-green: hsla(165, 58%, 66%, 1);
-	--clr-blue: hsla(214, 78%, 77%, 1);
-	--clr-purple-12: hsla(257, 72%, 82%, 0.12);
-	--clr-purple-dark: hsl(257 26% 49%);
-	--clr-purple-axis: hsla(257, 58%, 67%, 1);
-	--clr-pink: hsla(327, 71%, 79%, 1);
-	--clr-light-gray-200: hsla(220, 8%, 44%, 1);
-	--clr-light-gray-150: hsla(228, 38%, 80%, 1);
-	--clr-light-gray-100: hsla(228, 38%, 97%, 1);
-	--clr-light-gray-100-3: hsla(228, 38%, 97%, 0.3);
 
 	--br-big: 12px;
 	--br-med: 6px;
