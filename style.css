@@ -633,7 +633,8 @@ pre + p,
 }
 
 #scroll-to-top svg {
-	width: 40;
+	width: 40px;
+	aspect-ratio: 1;
 }
 
 @keyframes bounce {
