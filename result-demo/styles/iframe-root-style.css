@@ -47,6 +47,7 @@ fieldset {
 #arrow-horizontal {
 	position: absolute;
 	top: 50%;
+	width: 100%;
 }
 
 #arrow-vertical {

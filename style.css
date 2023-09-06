@@ -49,7 +49,7 @@ nav {
 	width: 100%;
 	position: fixed;
 	top: 0;
-	z-index: 5;
+	z-index: 20;
 	background-image: linear-gradient(
 		to bottom,
 		var(--clr-purple) 85%,
@@ -514,9 +514,11 @@ pre {
 	& ul {
 		margin: 0;
 		padding: 0;
+		line-height: 1;
 	}
 	& code {
 		background-color: transparent;
+		font-size: clamp(0.75rem, 0.1rem + 2vw, 1.25rem);
 	}
 
 	& li::marker {
@@ -524,9 +526,9 @@ pre {
 	}
 
 	.circle {
-		aspect-ratio: 1;
 		background-color: var(--clr-purple-50);
-		width: 350px;
+		width: 40%;
+		aspect-ratio: 1;
 		border-radius: 50%;
 		position: absolute;
 		display: grid;
@@ -539,15 +541,16 @@ pre {
 
 		.graph-title {
 			position: absolute;
-			top: 3.5rem;
+			top: 0;
 			left: 50%;
-			translate: -50% 0;
+			position: absolute;
 			width: max-content;
 
 			& code {
-				font-size: 1.3rem;
+				font-size: clamp(1rem, 0.1rem + 2.5vw, 1.4rem);
 			}
 		}
+
 		&:hover {
 			scale: 1.1;
 			opacity: 0.9;
@@ -555,7 +558,6 @@ pre {
 			outline-offset: 8px;
 
 			.graph-title {
-				font-weight: 600;
 				color: var(--clr-black);
 			}
 		}
@@ -578,8 +580,14 @@ pre {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		translate: -50% -50%;
+		translate: -40% -50%;
 	}
+}
+
+.left-circle .graph-title,
+.right-circle .graph-title {
+	translate: -50% 70%;
+	font-weight: 600;
 }
 
 pre,
