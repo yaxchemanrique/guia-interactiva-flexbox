@@ -13,10 +13,18 @@ const viewportHeight = window.innerHeight;
 backTopBtn.style.display = 'none';
 
 const layoutMargins = function () {
-    const tableOfContentWidth = tableOfContent.offsetWidth;
-    const marginSize = (window.innerWidth - (mainContainer.offsetWidth + tableOfContentWidth)) / 2;
-    tableOfContent.style.left = `${marginSize + mainContainer.offsetWidth}px`;
-    mainContainer.style.marginInline = `${marginSize}px`;
+    const viewportWidth = window.innerWidth;
+    console.log(viewportWidth);
+    if(viewportWidth > 970){
+        console.log('tablet')
+        const tableOfContentWidth = tableOfContent.offsetWidth;
+        const marginSize = (window.innerWidth - (mainContainer.offsetWidth + tableOfContentWidth)) / 2;
+        tableOfContent.style.left = `${marginSize + mainContainer.offsetWidth}px`;
+        mainContainer.style.marginInline = `${marginSize}px`;
+    } else {
+        mainContainer.style.marginInline = `auto`;
+    }
+    
 };
 
 const positionToc = function () {

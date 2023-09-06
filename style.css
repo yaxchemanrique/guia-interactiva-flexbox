@@ -626,7 +626,6 @@ pre + p,
 
 #scroll-to-top svg {
 	width: 40;
-	height: auto;
 }
 
 @keyframes bounce {
@@ -657,5 +656,39 @@ pre + p,
 @keyframes fade-out {
 	to {
 		opacity: 0;
+	}
+}
+
+@media screen and (width < 970px) {
+	.table-of-content {
+		display: none;
+	}
+	.hypotetical-size-code-test {
+		flex-direction: column;
+	}
+	.container,
+	.container1 {
+		padding: 2rem;
+	}
+}
+@media screen and (895px < width < 970px) {
+	.container {
+		max-width: 895px;
+	}
+}
+@media screen and (width < 895px) {
+	.container,
+	.container1 {
+		max-width: 100%;
+	}
+}
+@media screen and (width < 740px) {
+	.warning {
+		display: block;
+	}
+}
+@media screen and (width < 700px) {
+	.container {
+		margin-top: -6rem;
 	}
 }
