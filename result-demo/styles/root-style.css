@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+
 :root {
-	--ff-regular: 'neue-haas-grotesk-display', sans-serif;
-	--ff-code: 'Fira Code', monospace;
+	--ff-regular: "Manrope", sans-serif;
+	--ff-code: "Red Hat Mono", monospace;
 	--clr-black: hsl(0, 0%, 0%);
 	--clr-white: hsl(0, 0%, 100%);
 	--clr-white-40: hsla(0, 0%, 100%, 0.4);
